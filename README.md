@@ -27,13 +27,7 @@ This project demonstrates **end-to-end automation with security integration** �
   <p><em>Netflix Clone Homepage</em></p>
 </div>
 
----
 
-## 📹 Video Demonstration  
-
-[![Video Tutorial](https://img.youtube.com/vi/g8X5AoqCJHc/0.jpg)](https://youtu.be/g8X5AoqCJHc)  
-
----
 
 ## 🔑 Features  
 
@@ -46,17 +40,23 @@ This project demonstrates **end-to-end automation with security integration** �
 
 ---
 
-## 🛠️ Setup Instructions  
+🛠️ Setup Instructions
+Phase 1: Initial Setup & Deployment
 
-### **Phase 1: Initial Setup & Deployment**
-- Launch an **EC2 (Ubuntu 22.04)** instance on AWS.  
-- Install **Docker** and clone this repository:  
+Launch an EC2 (Ubuntu 22.04) instance on AWS.
 
-```bash
+Install Docker and clone this repository:
+
 sudo apt update && sudo apt upgrade -y
 sudo apt install docker.io -y
 git clone https://github.com/harshita194/Netflix-DevSecOps-CI-CD-Pipeline.git
 cd Netflix-DevSecOps-CI-CD-Pipeline
+
+
+Build & run Docker container with TMDB API key:
+
+docker build --build-arg TMDB_V3_API_KEY=<your_api_key> -t netflix .
+docker run -d --name netflix -p 8081:80 netflix:latest
 
 Phase 2: Security Integration
 

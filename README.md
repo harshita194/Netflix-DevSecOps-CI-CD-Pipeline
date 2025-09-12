@@ -14,19 +14,7 @@ This project demonstrates **end-to-end automation with security integration** �
 - **Security Integration:** SonarQube, Trivy, OWASP Dependency-Check  
 - **Monitoring:** Prometheus + Grafana  
 - **Orchestration:** Kubernetes (EKS) + ArgoCD  
-- **Cloud Provider:** AWS EC2 for infra setup  
-
----
-
-## 📺 Demo Screenshots  
-
-<div align="center">
-  <img src="./public/assets/DevSecOps.png" width="90%" />
-  <br />
-  <img src="./public/assets/home-page.png" width="90%" />
-  <p><em>Netflix Clone Homepage</em></p>
-</div>
-
+- **Cloud Provider:** AWS EC2 for infra setup 
 
 
 ## 🔑 Features  

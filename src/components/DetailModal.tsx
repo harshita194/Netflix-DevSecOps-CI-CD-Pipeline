@@ -177,11 +177,12 @@ export default function DetailModal() {
                   <Box flexGrow={1} />
                   <NetflixIconButton
                     size="large"
-                    onClick={() => handleMute(muted)}
+                    onClick={() => handleMute(!!muted)}
                     sx={{ zIndex: 2 }}
                   >
-                    {!muted ? <VolumeUpIcon /> : <VolumeOffIcon />}
+                   {!muted ? <VolumeUpIcon /> : <VolumeOffIcon />}
                   </NetflixIconButton>
+
                 </Stack>
 
                 <Container

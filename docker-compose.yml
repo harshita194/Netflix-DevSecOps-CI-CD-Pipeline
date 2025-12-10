@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  netflix-app:
+    build: .
+    container_name: netflix-app
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: always

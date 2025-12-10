@@ -41,7 +41,7 @@ export default function VolumeControllers({
   muted,
 }: {
   value: number;
-  handleVolume: SliderUnstyledOwnProps["onChange"];
+  handleVolume: SliderProps["onChange"];
   handleVolumeToggle: React.MouseEventHandler<HTMLButtonElement>;
   muted: boolean;
 }) {
